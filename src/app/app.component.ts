@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'holamundo';
+  alumno = "Gerson Cuá";
+  existeCurso = '';
+  verificarCurso(clase : any){
+    if(clase.value == ''){
+      this.existeCurso = '';
+    }else{
+      this.existeCurso = 'checked';
+    }
+  }
 }
